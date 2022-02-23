@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Factorial{
+public static void main(String args[]){
+
+int num;
+System.out.println("Enter  Whole Number:");
+
+Scanner sc = new Scanner(System.in);
+num = sc.nextInt();
+
+int fact=1;
+while(num!=0){
+fact=num*fact;
+num--;
+}
+System.out.println(fact);
+ }
+	
+}

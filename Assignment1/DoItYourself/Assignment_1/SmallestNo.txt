@@ -1,0 +1,34 @@
+import java.util.Scanner;  
+ 
+public class Main
+{ 
+   
+public static int smallest(int x, int y, int z){
+   int c=0; 
+while(x!=0&&y!=0&&z!=0)
+{  
+ x--;
+ y--;
+ z--;
+ c++;
+
+    
+}
+ 
+ return c;
+}
+    
+public static void main(String args[])  
+{  
+int x,y,z;  
+
+Scanner sc = new Scanner(System.in);  
+System.out.println("Enter  3 number: ");  
+x=sc.nextInt(); 
+y=sc.nextInt();
+z=sc.nextInt();
+ System.out.println("Smallest no. amongs 3 no : " +smallest(x,y,z));
+}
+
+ 
+}

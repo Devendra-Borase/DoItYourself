@@ -1,0 +1,22 @@
+
+import java.util.*;
+class LcmUsingPrimeFactor
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int n,f=2;
+		System.out.println("Enter the number");
+		n=sc.nextInt();
+		while(n>1)
+		{
+			if(n%f==0)
+			{
+				System.out.println(f);
+				n=n/f;
+			}
+			else
+				f++;
+		}
+	}
+}

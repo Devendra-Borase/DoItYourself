@@ -1,0 +1,28 @@
+import java.util.Scanner;  
+ 
+public class IntegerIntoDigit
+
+
+{  
+public static void main(String args[])  
+{  
+int n, temp;  
+
+Scanner sc = new Scanner(System.in);  
+System.out.print("Enter any number: ");  
+  
+n=sc.nextInt();  
+
+
+while( n > 0)  
+{  
+ 
+temp=n%10;  
+
+System.out.println(temp);  
+n=n/10;  
+
+
+}  
+}  
+}
